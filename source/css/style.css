@@ -1,0 +1,92 @@
+@font-face {
+  font-family: "Merriweather-Black";
+  src: url("../fonts/Merriweather-Black.woff2") format("woff2"), url("../fonts/Merriweather-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Merriweather-Regular";
+  src: url("../fonts/Merriweather-Regular.woff2") format("woff2"), url("../fonts/Merriweather-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Merriweather-Italic";
+  src: url("../fonts/Merriweather-Italic.woff2") format("woff2"), url("../fonts/Merriweather-Italic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Merriweather-LightItalic";
+  src: url("../fonts/Merriweather-LightItalic.woff2") format("woff2"), url("../fonts/Merriweather-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "OpenSans-Bold";
+  src: url("../fonts/OpenSans-Bold.woff2") format("woff2"), url("../fonts/OpenSans-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "OpenSans-SemiBold";
+  src: url("../fonts/OpenSans-SemiBold.woff2") format("woff2"), url("../fonts/OpenSans-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "OpenSans-Light";
+  src: url("../fonts/OpenSans-Light.woff2") format("woff2"), url("../fonts/OpenSans-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+body {
+  font-family: "Merriweather-Regular";
+  /*, "MS Sans Serif", "sans-serif";*/
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 400;
+}
+.about {
+  box-sizing: border-box;
+  border: 10px solid #e3b545;
+  max-width: 566px;
+}
+.about__title {
+  color: #e3b545;
+  text-transform: uppercase;
+  font-size: 48px;
+  line-height: 60px;
+}
+.about__text {
+  margin: 0;
+  padding: 0;
+}
+.promo {
+  background-image: url("../img/back/background-1.jpg");
+  background-repeat: no-repeat;
+}
+.promo__wrapper {
+  max-width: 1170px;
+}
+.services__wrap-first {
+  position: relative;
+}
+.services__wrap-back {
+  background-image: url(../img/back/back-img-1.jpg);
+  background-repeat: no-repeat;
+  background-position: calc(100vw - 60%) top;
+  background-size: 60vw;
+}
+.services__wrap-about {
+  max-width: 1170px;
+}
+.services__list {
+  max-width: 1170px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
