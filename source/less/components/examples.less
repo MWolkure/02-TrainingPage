@@ -1,0 +1,184 @@
+.examples__wrap-back {
+	background-image: url(../img/back/back-img-2.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-size: 60vw auto;
+	margin-bottom: 165px;
+	
+	.tablet({
+		background-image: none;
+	});
+}
+
+.examples__section {
+	max-width: 1170px;
+	margin: 0 auto;
+	text-align: left;
+	padding-top: 160px;
+	padding-bottom: 160px;
+	box-sizing: border-box;
+	
+	.tablet({
+		padding: 0;
+	});
+}
+
+.examples__section-wrap {
+	box-sizing: border-box;
+	max-width: 560px;
+	border: 10px solid @color;
+	padding: 65px 30px;
+	margin-left: auto;
+	
+	.tablet({
+		margin: 0 auto;
+	});
+}
+
+.examples__section-title {
+	.title();
+	margin-bottom: 55px;
+	
+	.tablet({
+		font-size: 40px;
+		line-height: 1em;
+	});
+}
+
+.examples__section-text {
+	.text();
+}
+
+.examples__block {
+	max-width: 1170px;
+	margin: 0 auto;
+	margin-bottom: 145px;
+}
+
+.examples__wrap-flex {
+	display: flex;
+	justify-content: space-between;
+	
+	.tablet({
+		flex-direction: column;
+		max-width: 560px;
+		margin: auto;
+	});
+}
+
+.examples__wrap-text {
+	max-width: 470px;
+	box-sizing: border-box;
+	border: 10px solid @color;
+	padding: 90px 30px;
+	text-align: left;
+	margin-bottom: 30px;
+	
+	.tablet({
+		margin: auto;
+		margin-bottom: 30px;
+		max-width: 560px;
+	});
+}
+
+.examples__title {
+	.title();
+	margin-bottom: 55px;
+	
+	.tablet({
+		font-size: 40px;
+		line-height: 1em;
+	});
+}
+
+.examples__block-next {
+	position: relative;
+	box-sizing: border-box;
+	border: 10px solid #444341;
+	background-color: #464643;
+	width: 57.26%;
+	background-image: url(../img/pic/content-1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 30px;
+	
+	.tablet({
+		width: 100%;
+		height: 300px;
+	});
+}
+
+.examples__block-next::after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	opacity: 0;
+	z-index: 1;
+}
+
+.examples__block-next:hover {
+	border-color: @color;
+}
+
+.examples__block-next:hover::after {
+	opacity: 1;
+}
+
+.examples__text-next {
+	.text();
+	color: @color;
+	max-width: 220px;
+  text-align: center;
+	font-style: italic;
+	font-size: 18px;
+	line-height: 1em;
+	position: relative;
+	z-index: 2;
+}
+
+.examples__span {
+	display: inline-block;
+	font-family: "OpenSans-Bold";
+	font-size: 36px;
+	line-height: 1em;
+	margin-top: 20px;
+}
+
+.examples__items-outer {
+	display: flex;
+}
+
+.examples__items-outer {
+	display: flex;
+}
+
+.examples__img-block {
+	display: flex;
+}
+
+.examples__img-wrap:first-child {
+	margin-right: 30px;
+	margin-bottom: 30px;
+}
+
+.examples__wrap-outer {
+	margin-right: 30px;
+}
+
+.examples__img-outer {
+	display: block;
+	object-fit: cover;
+}
+
+.examples__img {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	height: auto;
+}
+

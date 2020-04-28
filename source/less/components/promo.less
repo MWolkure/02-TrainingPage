@@ -1,0 +1,73 @@
+.promo {
+	background-image: url("../img/back/background-1.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 1000px;
+}
+
+.promo__wrapper {
+	max-width: 1170px;
+	margin: auto;
+	text-align: center;
+	padding: 50px 40px;
+	box-sizing: border-box;
+}
+
+.promo__logo-wrap {
+	margin-bottom: 220px;
+}
+
+.promo__title {
+	.title();
+	color: #f4f097;
+	line-height: 1em;
+	font-size: 90px;
+	margin-bottom: 65px;
+	
+	.tablet({
+		font-size: 60px;
+	});
+}
+
+
+.promo__text {
+	.text();
+	font-size: 24px;
+	line-height: 1em;
+	color: #8b6e29;
+	margin-bottom: 50px;
+	
+	.tablet({
+		font-size: 20px;
+	});
+}
+
+.promo__btn-block {
+	max-width: 470px;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.promo__btn {
+	border: 1px solid #8b6f2a;
+	border-radius: 30px;
+	width: 203px;
+	padding: 20px;
+	font-family: "OpenSans-Semibold";
+	font-size: 18px;
+	line-height: 1em;
+	color: #8b6f2a;
+	text-transform: uppercase;
+	background-color: rgba(0, 0, 0, 0);
+	cursor: pointer;
+}
+
+.promo__btn:hover {
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+.promo__btn:active {
+	background-color: rgba(0, 0, 0, 0.7);
+}

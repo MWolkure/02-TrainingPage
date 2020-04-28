@@ -1,0 +1,40 @@
+.title() {
+	margin: 0;
+	color: @color;
+	font-family: "OpenSans-Bold";
+	font-size: 48px;
+	line-height: 60px;
+	text-transform: uppercase;
+}
+
+.text() {
+	margin: 0;
+	padding: 0;
+}
+/*
+.laptop(@rules) {
+	@media (max-width: ???px) {
+		@rules();
+	};
+}
+*/
+.tablet(@rules) {
+	@media (max-width: 768px) {
+		@rules();
+	};
+}
+
+/*
+ВЫЗОВ МИКСИНА МЕДИА ЗАПРОСА: 
+
+.class {
+	.tablet({
+		свойство: значение;
+		свойство: значение;
+	});
+}
+
+ВНИМАТЕЛЬНЕЙ К ФИГУРНЫМ СКОБКАМ, БЛЭТ!!!
+ПАТАМУШТА ИХ !!ДВЕ!! ПАРЫ, МАРТА!
+
+*/
