@@ -30,11 +30,18 @@
 	});
 }
 
-.footer__icon {
+.footer__icon-wrap {
 	margin-right: 10px;
+	width: ;
 }
 
-.footer__icon:hover svg {
+.footer__icon {
+	width: 100%;
+	height: auto;
+	object-fit: contain;
+}
+
+.footer__icon-wrap:hover .footer__icon {
 	fill: #8b6f2a;
 }
 
@@ -43,7 +50,7 @@
 	text-align: left;
 }
 
-.footer__block:last-child .footer__icon {
+.footer__block:last-child .footer__icon-wrap {
 	padding-top: 4px;
 	box-sizing: border-box;
 }

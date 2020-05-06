@@ -2,8 +2,12 @@
 	background-image: url(../img/back/back-img-2.jpg);
 	background-repeat: no-repeat;
 	background-position: left top;
-	background-size: 60vw auto;
+	background-size: auto;
 	margin-bottom: 165px;
+	
+	.breakpoint-2({
+		margin-bottom: 50px;
+	});
 	
 	.tablet({
 		background-image: none;
@@ -53,6 +57,10 @@
 	max-width: 1170px;
 	margin: 0 auto;
 	margin-bottom: 145px;
+	
+	.breakpoint-2({
+		margin-bottom: 50px;
+	});
 }
 
 .examples__wrap-flex {
@@ -173,6 +181,8 @@
 .examples__img-outer {
 	display: block;
 	object-fit: cover;
+	width: 100%;
+	height: auto;
 }
 
 .examples__img {

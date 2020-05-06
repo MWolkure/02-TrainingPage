@@ -1,6 +1,10 @@
 .team {
 	background-color: @color-back;
 	margin-bottom: 150px;
+	
+	.breakpoint-2({
+		margin-bottom: 50px;
+	});
 }
 
 .team__wrap-main {
@@ -22,6 +26,12 @@
 	box-sizing: border-box;
 	max-width: 370px;
 	background-color: #ffffff;
+	align-self: center;
+	
+	.breakpoint-2 ({
+		margin-left: 0;
+		margin-right: 50px;
+	});
 	
 	.tablet({
 		margin: 0 auto;
@@ -39,7 +49,20 @@
 	background-color: #ffffff;
 	box-sizing: border-box;
 	padding: 15px;
-	max-width: 240px;
+}
+
+.team__leader-name {
+	.text();
+	font-family: "OpenSans-Light";
+	font-size: 24px;
+	line-height: 1em;
+	color: #8b6f2a;
+	margin-bottom: 20px;
+}
+
+.team__leader-block {
+	display: flex;
+	justify-content: space-between;
 }
 
 .team__leader-text {
@@ -50,12 +73,20 @@
 	font-family: "Merriweather-LightItalic";
 }
 
-.team__leader-span {
-	display: inline-block;
-	font-family: "OpenSans-Light";
-	font-size: 24px;
-	line-height: 1em;
-	margin-bottom: 20px;
+.team__leader-icons {
+	display: flex;
+	justify-content: space-between;
+	width: 75px;
+}
+
+.team__lead-icon {
+	fill: #999999;
+	vertical-align: top;
+}
+
+.team__lead-icon-wrap:hover > .team__lead-icon {
+	fill: #8b6f2a;
+	cursor: pointer;
 }
 
 .team__about {
@@ -65,6 +96,10 @@
 	border: 10px solid @color;
 	text-align: left;
 	margin-bottom: 95px;
+	
+	.breakpoint-2 ({
+		margin-bottom: 25px;
+	});
 	
 	.tablet({
 		margin: auto;
@@ -101,14 +136,26 @@
 .team__img-wrapper {
 	margin-right: 10px;
 	position: relative;
+	z-index: 1;
 }
 
 .team__img-wrapper:last-child {
 	margin: 0;
 }
 
-.team__img-wrapper:hover {
-	//border: 3px solid @color; //увеличивает ширину, и все прыгает...((
-	box-shadow: inset 0 0 0px 7px @color; //??? где она? или ее на бифор повесить??
+.team__img-wrapper::before {
+	content: "";
+	width: 97px;
+	height: 97px;
+	z-index: 2;
+	border: 5px solid @color;
+	box-sizing: border-box;
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: none;
 }
 
+.team__img-wrapper:hover::before {
+	display: block;
+}

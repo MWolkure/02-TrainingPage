@@ -11,13 +11,19 @@
 	margin: 0;
 	padding: 0;
 }
-/*
-.laptop(@rules) {
-	@media (max-width: ???px) {
+
+.breakpoint-1(@rules) {
+	@media (max-width: 1140px) {
 		@rules();
 	};
 }
-*/
+
+.breakpoint-2(@rules) {
+	@media (max-width: 900px) {
+		@rules();
+	};
+}
+
 .tablet(@rules) {
 	@media (max-width: 768px) {
 		@rules();
