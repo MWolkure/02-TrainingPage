@@ -1,0 +1,26 @@
+.about {
+	box-sizing: border-box;
+	border: 10px solid @color;
+	max-width: 570px;
+	padding: 30px;
+	padding-top: 65px;
+	
+	.tablet({
+		margin: auto;
+	});
+}
+
+.about__title {
+	.title();
+	margin-bottom: 45px;
+	
+	.tablet({
+		font-size: 40px;
+		line-height: 1em;
+	});
+}
+
+.about__text {
+	.text();
+}
+

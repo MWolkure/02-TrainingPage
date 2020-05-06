@@ -1,0 +1,161 @@
+.team {
+	background-color: @color-back;
+	margin-bottom: 150px;
+	
+	.breakpoint-2({
+		margin-bottom: 50px;
+	});
+}
+
+.team__wrap-main {
+	display: flex;
+	justify-content: space-between;
+	max-width: 1170px;
+	margin: auto;
+	box-sizing: border-box;
+	padding: 90px 0;
+	
+	.tablet({
+		flex-direction: column-reverse;
+	});
+}
+
+.team__leader {
+	margin-left: 100px;
+	border: 10px solid @color;
+	box-sizing: border-box;
+	max-width: 370px;
+	background-color: #ffffff;
+	align-self: center;
+	
+	.breakpoint-2 ({
+		margin-left: 0;
+		margin-right: 50px;
+	});
+	
+	.tablet({
+		margin: 0 auto;
+	});
+}
+
+.team__img {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	height: auto;
+}
+
+.team__leader-wrap {
+	background-color: #ffffff;
+	box-sizing: border-box;
+	padding: 15px;
+}
+
+.team__leader-name {
+	.text();
+	font-family: "OpenSans-Light";
+	font-size: 24px;
+	line-height: 1em;
+	color: #8b6f2a;
+	margin-bottom: 20px;
+}
+
+.team__leader-block {
+	display: flex;
+	justify-content: space-between;
+}
+
+.team__leader-text {
+	.text();
+	color: #8b6f2a;
+	font-size: 16px;
+	line-height: 1em;
+	font-family: "Merriweather-LightItalic";
+}
+
+.team__leader-icons {
+	display: flex;
+	justify-content: space-between;
+	width: 75px;
+}
+
+.team__lead-icon {
+	fill: #999999;
+	vertical-align: top;
+}
+
+.team__lead-icon-wrap:hover > .team__lead-icon {
+	fill: #8b6f2a;
+	cursor: pointer;
+}
+
+.team__about {
+	max-width: 570px;
+	padding: 85px 30px;
+	box-sizing: border-box;
+	border: 10px solid @color;
+	text-align: left;
+	margin-bottom: 95px;
+	
+	.breakpoint-2 ({
+		margin-bottom: 25px;
+	});
+	
+	.tablet({
+		margin: auto;
+		margin-bottom: 50px;
+	});
+}
+
+.team__title {
+	.title();
+	margin-bottom: 50px;
+	
+	.tablet({
+		font-size: 40px;
+		line-height: 1em;
+	});
+}
+
+.team__text {
+	.text();
+}
+
+.team__staff {
+	display: flex;
+	justify-content: flex-start;
+	
+	.tablet({
+		max-width: 570px;
+		justify-content: space-around;
+		margin: auto;
+		margin-bottom: 50px;
+	});
+}
+
+.team__img-wrapper {
+	margin-right: 10px;
+	position: relative;
+	z-index: 1;
+}
+
+.team__img-wrapper:last-child {
+	margin: 0;
+}
+
+.team__img-wrapper::before {
+	content: "";
+	width: 97px;
+	height: 97px;
+	z-index: 2;
+	border: 5px solid @color;
+	box-sizing: border-box;
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: none;
+}
+
+.team__img-wrapper:hover::before {
+	display: block;
+}
